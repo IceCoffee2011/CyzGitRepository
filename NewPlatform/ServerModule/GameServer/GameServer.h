@@ -1,0 +1,33 @@
+#pragma once
+
+#include "Resource.h"		// 主符号
+
+#define _CRTDBG_MAP_ALLOC 
+#include<stdlib.h>
+
+#include<crtdbg.h>
+
+//////////////////////////////////////////////////////////////////////////////////
+
+//程序对象
+class CGameServerApp : public CWinApp
+{
+	//函数定义
+public:
+	//构造函数 
+	CGameServerApp();
+
+	//重载函数
+public:
+	//启动函数
+	virtual BOOL InitInstance();
+	virtual int ExitInstance();
+
+	DECLARE_MESSAGE_MAP()
+};
+
+//////////////////////////////////////////////////////////////////////////////////
+
+//程序对象
+extern CGameServerApp theApp;
+//////////////////////////////////////////////////////////////////////////////////
